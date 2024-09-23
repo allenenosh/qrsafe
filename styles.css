@@ -1,0 +1,118 @@
+:root {
+    --bg-color: #f0f4f8;
+    --text-color: #2d3748;
+    --button-bg: #4299e1;
+    --button-text: #ffffff;
+    --safe-color: #48bb78;
+    --warning-color: #ed8936;
+    --danger-color: #e53e3e;
+}
+
+[data-theme="dark"] {
+    --bg-color: #1a202c;
+    --text-color: #e2e8f0;
+    --button-bg: #63b3ed;
+    --button-text: #ffffff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.button, #fileInput + label {
+    display: inline-block;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.button:hover, #fileInput + label:hover {
+    opacity: 0.9;
+}
+
+#fileInput {
+    display: none;
+}
+
+#videoContainer {
+    margin-top: 20px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+#video {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+#output, #analysisResult {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.analysis-result {
+    font-weight: bold;
+}
+
+.safe {
+    color: var(--safe-color);
+}
+
+.warning {
+    color: var(--warning-color);
+}
+
+.danger {
+    color: var(--danger-color);
+}
+
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
