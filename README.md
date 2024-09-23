@@ -9,4 +9,5 @@ Change the value of the "key={KEY}" to an actual API key get it from https://saf
 
  - The site has two options you can either upload or scan the qrcode.
  - This version only checks for ["MALWARE", "SOCIAL_ENGINEERING"]
+ - This is Version 1 The Dark mode is broken it will be fixed ASAP
  
